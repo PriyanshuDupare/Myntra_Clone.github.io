@@ -1,0 +1,204 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+.left img{
+    width: 42px;
+    height: 38px;
+}
+.left img:hover{
+    transform: scale(1.5);
+    border: 2px solid black;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 66px;
+    box-shadow: rgba(0,0,0,0.15)1.95px 1.95px 2.6px;
+}
+.container{ /**/
+    max-width: 100vw;
+    padding: 0 5vw;
+}
+nav{
+    font-size: 13px;
+    padding-top: 14px;
+}
+nav ul li{
+    list-style: none; /*Through these ... will remove*/
+    padding: 0px 12px;
+
+}
+nav ul li:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transform: scale(1.1);
+
+}
+.section1{
+    background-color: #fffdfd;
+
+}
+.search{
+    width: 21vw;
+    padding: 7px 7px;
+    border: 0.5px solid gray;
+    background-color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.homeimg{
+    width: 92vw;
+    height: 50vw;
+    margin: 12px 0;
+}
+.Issue{
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 6px 17px;
+    margin: 84px 5px;
+}
+.right{
+    cursor: pointer;
+
+}
+.profile:hover{
+    color: red;
+    transform: scale(1.2);
+}
+.wishlist:hover{
+    color: red;
+    transform: scale(1.2);
+}
+.bag:hover{
+    color: red;
+    transform: scale(1.2);
+}
+#picks{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#design{
+    display: flex;
+}
+.box{
+    border: 2px solid black;
+    margin: 1px 5px;
+}
+.box:hover{
+    transform: scale(1.1);
+    background-color: darkred;
+    color: lightgreen;
+    font-family: cursive;
+    cursor: pointer;
+}
+.box img{
+    height: 180px;
+    width: 188px;
+}
+#picks h1{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(122, 122, 174);
+
+}
+#picks h2{
+    font-size: 1.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkseagreen;
+
+}
+#rightbox{
+    display: flex;
+    margin: 12px;
+}
+@media(max-width:1183px){
+header{
+    height: 132px;
+}
+nav ul li{
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px 4px;
+    font-size: 8px;
+}
+nav{
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    padding: 0px 3px;
+}
+.right{
+    flex-direction: column;
+}
+#rightbox{
+    display: flex;
+    margin: 12px;
+}
+#design{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.left img{
+    width: 38px;
+    height: 38px;
+    margin: 1px -4px;
+    padding: 1px 1px;
+}
+.box img{
+    width: 190px;
+    padding: 2px 6px;
+}
+.search{
+    width: 58vw;
+    padding: 2px 7px;
+    margin: 2px 2px;
+    align-items: center;
+    font-size: small;
+}
+#picks{
+    justify-content: center;
+    align-items: center;
+}
+.homeimg {
+    width: 92vw;
+    height: 50vw;
+    margin: 12px 15px;
+}
+}
+@media (min-width:768px) and (max-width:912px){
+    nav ul li{
+        font-size: 12px;
+        padding: 0px 11px;
+
+    }
+    .search{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 37vw;
+    }
+    .left img {
+        width: 38px;
+        height: 38px;
+        margin: 1px 25px;
+        padding: 1px 1px;
+    }
+    .mx-2{
+        font-size: 16px;
+    }
+}
